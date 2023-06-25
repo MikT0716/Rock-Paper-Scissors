@@ -1,0 +1,30 @@
+### POST with invalid input
+POST http://localhost:8080/api/game/play?explain=true
+Content-Type: application/json
+Accept: application/json
+
+{
+  "hand": "lizard"
+}
+
+### POST with explanation
+POST http://localhost:8080/api/game/play?explain=true
+Content-Type: application/json
+Accept: application/json
+
+{
+  "hand": "ROCK"
+}
+
+### POST without explanation
+POST http://localhost:8080/api/game/play
+Content-Type: application/json
+Accept: application/json
+
+{
+  "hand": "ROCK"
+}
+
+### GET rules
+GET http://localhost:8080/api/game/rules
+Accept: application/json
